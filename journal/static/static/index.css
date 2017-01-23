@@ -1,0 +1,12 @@
+body{
+        background-attachment: fixed;
+        background-color: #000000;
+        background-image: url(https://irenehyleung.files.wordpress.com/2012/12/2012-movie-collage31.jpg);
+	background-size:cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+
+}

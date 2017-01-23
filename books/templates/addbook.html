@@ -1,0 +1,9 @@
+{% extends "basebook.html" %}
+{% block content %}
+<h1>Add A Book I read</h1>
+<form method='POST' action=''> {% csrf_token %}
+{{ form.as_p }}
+<input type='submit' value = 'Add Book I read'/>
+</form>
+{% endblock %}
+

@@ -1,0 +1,9 @@
+{% extends "baseplace.html" %}
+{% block content %}
+<h1>Add A place I visited</h1>
+<form method='POST' action=''> {% csrf_token %}
+{{ form.as_p }}
+<input type='submit' value = 'Add Place I visited'/>
+</form>
+{% endblock %}
+

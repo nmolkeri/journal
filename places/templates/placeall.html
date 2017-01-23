@@ -1,0 +1,29 @@
+<!-- Main component for a primary marketing message or call to action -->
+<!--      <div class="jumbotron">
+        <h1>Navbar example</h1>
+        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>To see the difference between static and fixed top navbars, just scroll.</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+        </p>
+      </div>
+
+-->
+{% extends "baseplace.html" %}
+{% block content %}
+<h1>This is the Places I Visited</h1>
+	<div id="placelist">
+		{% for name in places %}
+		{% load static %}
+	<h2>{{name}}</h2>
+	<p>Place: {{name}} </p>
+         <p>Country: {{name.country}}</p>
+         <p>Visit Date: {{name.visit_date}}</p>
+	  <p>Reason of visit: {{name.reason}}</p>
+	  <p>International or Domestic place: {{name.international_domestic}}</p>
+         <p>Star Attraction of the place: {{name.attraction}}</p>
+	<p>Description of the place: {{name.description}}</p>
+		{% endfor %}	
+	</div>
+
+{% endblock %}
